@@ -1,4 +1,4 @@
-stack:
+app:
   description: 'reactjs-graphql-hello-world'
   parameters:
     apiRoot: '/api'
@@ -20,6 +20,7 @@ stack:
           http:
             - method: get
               path: '/*'
+  entry: www
   outputs:
     apiUrl:
       description: 'The public url of the GraphQL API'
