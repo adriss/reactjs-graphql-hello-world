@@ -1,0 +1,41 @@
+stack:
+  description: 'reactjs-graphql-hello-world'
+  parameters:
+    apiRoot: '/api'
+  resources:
+    api:
+      type: api
+      properties:
+        schema: '${apiRoot}/schema.graphql'
+        resolvers:
+          - type: Query
+            field: hello
+            request: '${apiRoot}/resolvers/Query.hello.request'
+            response: '${apiRoot}/resolvers/Query.hello.response'
+    www:
+      type: folder
+      properties:
+        source: '/www/build'
+        events:
+          http:
+            - method: get
+              path: '/*'
+  outputs:
+    apiUrl:
+      description: 'The public url of the GraphQL API'
+      type: resource
+      properties:
+        name: api
+        attribute: url
+    apiRegion:
+      description: 'The region where the GraphQL API is running'
+      type: resource
+      properties:
+        name: api
+        attribute: region
+    apiToken:
+      description: 'The security auth token used by GraphQL API'
+      type: resource
+      properties:
+        name: api
+        attribute: token

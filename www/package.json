@@ -1,0 +1,45 @@
+{
+  "name": "www",
+  "version": "0.0.1",
+  "description": "reactjs-graphql-hello-world",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriss/reactjs-graphql-hello-world.git"
+  },
+  "keywords": [
+    "reactjs",
+    "graphql",
+    "adriss"
+  ],
+  "author": "JC Carrillo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adriss/reactjs-graphql-hello-world/issues"
+  },
+  "homepage": "https://github.com/adriss/reactjs-graphql-hello-world#readme",
+  "dependencies": {
+    "apollo-boost": "^0.4.4",
+    "apollo-link": "^1.2.13",
+    "aws-appsync": "^2.0.0",
+    "aws-appsync-react": "^2.0.0",
+    "graphql": "^14.5.4",
+    "graphql-tag": "^2.10.1",
+    "react": "^16.9.0",
+    "react-apollo": "^2.5.8",
+    "react-dom": "^16.9.0",
+    "react-scripts": "2.1.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
