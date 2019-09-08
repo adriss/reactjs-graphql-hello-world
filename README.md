@@ -17,10 +17,10 @@ $ ls
   README.md  app.yaml api        www
 ```
 ##### app.yaml
-The `app.yaml` file defines this sample' stack by providing definitions to the following components:
+The `app.yaml` file defines this sample.
 1. `parameters`: defines shared parameters to be used within the yaml file.
 2. `resources`: defines the GraphQL API as `api` and the Cloud Folder as `www`.
-3. `outputs`: defines the stack outputs that will be pushed into the app as environment variables.
+3. `outputs`: defines the resource outputs that will be pushed into the app as environment variables.
 #### api
 The `api` directory contains the GraphQL schema and resolvers.
 #### www
@@ -46,4 +46,4 @@ Use this same command whenever you want to deploy the latest committed version o
 Note that Adriss only deploys code that you push to the `master` branch of the `adriss` remote. Pushing code to another 
 branch of the remote has no effect.
 ## Updating
-Upon deploying your app, Adriss detects which resources of the app, as defined in `app.yaml`, need to be updated.
+Upon deploying your app, Adriss detects which resources of the app need to be updated.
